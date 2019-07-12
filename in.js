@@ -3,12 +3,13 @@ import { render } from "react-dom"
 import { HashRouter } from "react-router-dom";
 import { Main } from "./src/main";
 import { NavBar } from "./src/navBar";
-import { } from "./src/footer";
+import { Footer } from "./src/footer";
 
 function App() {
     return <div>
         <NavBar />
         <Main />
+        <Footer />
     </div>
 }
 

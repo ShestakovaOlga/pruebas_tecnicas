@@ -3,9 +3,9 @@ import colors from "../constants/colors";
 
 export function NavBar() {
     return <div style={{
-        width: '100%',
+        width: '100vw',
         height: '60px',
-        backgroundColor: colors.greenPrimary,
+        backgroundColor: colors.navBarColor,
     }}>
         <div style={{
             display: 'flex',

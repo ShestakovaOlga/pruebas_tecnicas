@@ -6,4 +6,7 @@ export default {
     yellow: '#F7DC6F',
     greenLigth: '#D0ECE7',
     greenPrimary: '#73C6B6',
+    orange: '#FB8C00',
+    navBarColor: '#F0B27A ',
+    footerColor: '#D35400',
 }
