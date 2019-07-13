@@ -16,9 +16,22 @@ export function Main() {
     return <div style={{
         width: '100vw',
         minHeight: '100vh',
-        backgroundColor: colors.orange,
+        backgroundColor: colors.yellow,
     }}>
         <div>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                padding: 40,
+            }}>
+                <input style={{
+                    borderStyle: "none",
+                    width: 400,
+                    fontSize: '1.2rem',
+                    textAlign: 'center',
+                    color: colors.grayLigth,
+                }} type="search" name="filterPok" id="filterP" placeholder="Filtra pokemons por nombre.. " />
+            </div>
             <div style={{
                 display: 'grid',
                 justifyContent: 'center',
