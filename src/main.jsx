@@ -17,13 +17,15 @@ export function Main() {
         width: '100vw',
         minHeight: '100vh',
         backgroundColor: colors.yellow,
+        display: 'flex',
+        justifyContent: 'center'
     }}>
         <div style={{
             width: 150,
             height: 150,
             backgroundColor: colors.black,
             transform: 'rotate(45deg)',
-            position: 'absolute',
+            position: 'fixed',
             left: -80,
             top: -80
         }}></div>
@@ -32,7 +34,7 @@ export function Main() {
             height: 150,
             backgroundColor: colors.black,
             transform: 'rotate(45deg)',
-            position: 'absolute',
+            position: 'fixed',
             right: -80,
             top: -80
         }}></div>
@@ -42,9 +44,9 @@ export function Main() {
             backgroundColor: colors.red,
             border: '1px solid red',
             borderRadius: 150,
-            position: 'absolute',
-            right: -70,
-            bottom: -910
+            position: 'fixed',
+            right: -125,
+            bottom: -100
         }}> </div>
         <div style={{
             width: 250,
@@ -52,9 +54,9 @@ export function Main() {
             backgroundColor: colors.red,
             border: '1px solid red',
             borderRadius: 150,
-            position: 'absolute',
-            left: -70,
-            bottom: -910
+            position: 'fixed',
+            left: -125,
+            bottom: -100
         }}></div>
         <div>
             <div style={{
@@ -64,10 +66,12 @@ export function Main() {
             }}>
                 <input style={{
                     borderStyle: "none",
+                    boxShadow: 'none',
+                    outline: 'none',
+                    borderRadius: 5,
                     width: 400,
                     fontSize: '1.2rem',
                     textAlign: 'center',
-                    color: colors.grayLigth,
                 }} type="search" name="filterPok" id="filterP" placeholder="Filtra pokemons por nombre.. " />
             </div>
             <div style={{

@@ -12,7 +12,7 @@ export async function GetPokemons() {
             name: d.name.charAt(0).toUpperCase(1) + d.name.substr(1).toLowerCase(),
             id: d.id,
             img: d.sprites.front_default,
-            ability: d.types.map(a => a.type.name)
+            ability: d.types.map(a => a.type.name.toUpperCase())
         })
     }
 

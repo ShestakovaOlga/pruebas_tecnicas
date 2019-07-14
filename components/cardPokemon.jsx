@@ -33,10 +33,14 @@ export function CardPokemon(props) {
                 marginLeft: 20,
                 marginTop: 15
             }}>{props.name}</h3>
-            <span style={{
-                marginLeft: 20,
-            }}>{props.ability}</span>
 
+            {props.ability.map(a => <span style={{
+                fontSize: '0.8rem',
+                marginLeft: 20,
+                border: '1px solid #F0B27A',
+                borderRadius: 5,
+                padding: 5,
+            }}>{a}</span>)}
         </div>
     </div>
 }
