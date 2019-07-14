@@ -18,6 +18,44 @@ export function Main() {
         minHeight: '100vh',
         backgroundColor: colors.yellow,
     }}>
+        <div style={{
+            width: 150,
+            height: 150,
+            backgroundColor: colors.black,
+            transform: 'rotate(45deg)',
+            position: 'absolute',
+            left: -80,
+            top: -80
+        }}></div>
+        <div style={{
+            width: 150,
+            height: 150,
+            backgroundColor: colors.black,
+            transform: 'rotate(45deg)',
+            position: 'absolute',
+            right: -80,
+            top: -80
+        }}></div>
+        <div style={{
+            width: 250,
+            height: 250,
+            backgroundColor: colors.red,
+            border: '1px solid red',
+            borderRadius: 150,
+            position: 'absolute',
+            right: -70,
+            bottom: -910
+        }}> </div>
+        <div style={{
+            width: 250,
+            height: 250,
+            backgroundColor: colors.red,
+            border: '1px solid red',
+            borderRadius: 150,
+            position: 'absolute',
+            left: -70,
+            bottom: -910
+        }}></div>
         <div>
             <div style={{
                 display: 'flex',

@@ -8,7 +8,6 @@ import { Footer } from "./src/footer";
 function App() {
     return <div>
         <Main />
-        <Footer />
     </div>
 }
 

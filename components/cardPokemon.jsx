@@ -3,28 +3,36 @@ import colors from "../constants/colors";
 
 export function CardPokemon(props) {
     return <div style={{
-        border: '1px solid red',
-        width: 200,
-        minHeight: 250,
+        border: '1px solid none',
+        boxShadow: '5px 10px colors.grayLigth',
+        width: 250,
+        minHeight: 300,
         display: 'flex',
         flexDirection: 'column',
+        backgroundColor: 'white',
     }}>
         <img style={{
-            width: 200,
-            height: 150,
-            border: '1px solid green',
+            width: 250,
+            height: 200,
+            backgroundColor: colors.grayLigth,
         }} src={props.img} alt="Img de pokemon" />
         <div style={{
             border: '1px solid colors.grayLigth',
-            backgroundColor: colors.grayLigth,
+            backgroundColor: colors.gray,
             width: 40,
+            position: 'absolute',
+            transform: 'translate(-1%, 1235%)',
+            fontSize: '0.8rem',
+            textAlign: 'center',
         }}>ID/{props.id}</div>
-        <span style={{
-            marginLeft: 20,
-            marginTop: 15
-        }}>{props.name}</span>
 
-        <div>
+
+        <div style={{
+        }}>
+            <h3 style={{
+                marginLeft: 20,
+                marginTop: 15
+            }}>{props.name}</h3>
             <span style={{
                 marginLeft: 20,
             }}>{props.ability}</span>

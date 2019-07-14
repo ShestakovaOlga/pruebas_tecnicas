@@ -9,10 +9,10 @@ export async function GetPokemons() {
         console.log(d);
 
         r.push({
-            name: d.name,
+            name: d.name.charAt(0).toUpperCase(1) + d.name.substr(1).toLowerCase(),
             id: d.id,
             img: d.sprites.front_default,
-            ability: d.abilities.map(a => a.ability.name)
+            ability: d.types.map(a => a.type.name)
         })
     }
 
