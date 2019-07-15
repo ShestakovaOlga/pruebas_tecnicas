@@ -4,7 +4,9 @@ import colors from "../constants/colors";
 export function CardPokemon(props) {
     return <div style={{
         border: '1px solid none',
-        boxShadow: '5px 10px colors.grayLigth',
+        boxShadow: `0px 0px 13px -1px gray`,
+        borderRadius: 4,
+        overflow: 'hidden',
         width: 250,
         minHeight: 300,
         display: 'flex',

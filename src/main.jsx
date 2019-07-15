@@ -5,6 +5,7 @@ import { GetPokemons } from "../server";
 
 export function Main() {
     const [pokemons, setPokemons] = useState([]);
+    const [search, setSearch] = useState('');
     useEffect(() => {
         GetPokemons().then((pok) => {
             console.log(pok);
@@ -64,7 +65,9 @@ export function Main() {
                 justifyContent: 'center',
                 padding: 40,
             }}>
-                <input style={{
+                <input value={search} onChange={e => {
+                    setSearch(e.target.value)
+                }} style={{
                     borderStyle: "none",
                     boxShadow: 'none',
                     outline: 'none',
@@ -81,7 +84,7 @@ export function Main() {
                 gridRowGap: 50,
                 gridTemplateColumns: 'auto auto auto auto',
             }}>
-                {pokemons.map((p) => {
+                {pokemons.filter(p => p.name.toLowerCase().includes(search)).map((p) => {
                     return <CardPokemon img={p.img} name={p.name} ability={p.ability} id={p.id} />
                 })}
             </div>
